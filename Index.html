@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語育成ゲーム Ultimate 完全版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="firework-layer"></div>
+    <div id="levelup-overlay"></div>
+    <div id="bonus-start-logo">BONUS STAGE!</div>
+    <div id="xp-splash">+50 XP!!</div>
+    <div id="priority-message"></div>
+    <div id="judge-overlay"><div id="judge-mark"></div></div>
+
+    <div id="home-screen" class="screen">
+        <div id="level-panel">
+            <div id="home-lv-num">Lv.1</div>
+            <div id="xp-bar">
+                <div id="xp-fill-home"></div>
+            </div>
+            <div id="home-xp-text">0 / 50 XP</div>
+        </div>
+
+        <button id="setting-btn">⚙️</button>
+
+        <div id="egg-area" class="float-char-anim"></div>
+
+        <div id="diamond-menu">
+            <div class="diamond locked">
+                <div class="diamond-content">
+                    ランキング
+                    <div class="lock-line">⛓️🔒⛓️</div>
+                </div>
+            </div>
+
+            <div class="diamond locked left">
+                <div class="diamond-content">
+                    フレンド
+                    <div class="lock-line">⛓️🔒⛓️</div>
+                </div>
+            </div>
+
+            <div class="diamond locked right">
+                <div class="diamond-content">
+                    マッチ
+                    <div class="lock-line">⛓️🔒⛓️</div>
+                </div>
+            </div>
+
+            <div class="diamond adventure">
+                <div class="diamond-content">
+                    ストーリー<br>＆<br>冒険
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="story-adventure-screen" class="screen">
+        <button id="home-btn">HOME</button>
+
+        <div class="choice-diamond story-choice locked">
+            <div class="diamond-content">
+                ストーリー
+                <div class="lock-line">⛓️🔒⛓️</div>
+            </div>
+        </div>
+
+        <div class="choice-diamond adventure-choice">
+            <div class="diamond-content">冒険</div>
+        </div>
+    </div>
+
+    <div id="game-screen" class="screen">
+        <button id="back-btn" class="nav-btn">← HOME</button>
+
+        <div id="combo-display">🔥×0 COMBO!</div>
+
+        <div class="game-header">
+            <div id="game-lv-num">Lv.1</div>
+            <div class="game-xp-bar-container">
+                <div id="game-xp-fill"></div>
+            </div>
+            <div id="game-xp-text">0/50</div>
+        </div>
+
+        <div class="main-stage">
+            <div id="char-display" class="float-char-anim"></div>
+            <div id="q-display">準備中...</div>
+        </div>
+
+        <div class="ui-bottom">
+            <input id="ans-input" type="text" placeholder="答えを入力...">
+            <div>
+                <button id="check-btn" class="btn">決定！</button>
+                <button id="next-btn" class="btn">次へ進む ＞</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
